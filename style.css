@@ -207,7 +207,10 @@ text-decoration: none;
         height: 285px;
     margin: auto;}
     #box #showPicture .box ul{position: relative;}
-    #box #showPicture .box #pic li{ position: absolute;
+    #box #showPicture .box #pic li{
+         position: absolute;
+         
+         transition: all  0.5;
         
     }
     #box #showPicture .box img{
@@ -218,6 +221,7 @@ text-decoration: none;
     
     }
     #box #showPicture .box ul .active{
+        opacity: 1;
         z-index: 10;
     }
     #box #showPicture .box .sidebar{
@@ -304,6 +308,7 @@ text-decoration: none;
        
     #box #showPicture .box .dot li{width:10px ;
         float: left;
+        cursor: pointer;
        margin: 0 5px 0 5px;
     height: 10px; border-radius: 50%; 
     background-color: #9BB6DA;}

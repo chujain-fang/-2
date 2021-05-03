@@ -1,4 +1,23 @@
 window.onload=function(){
+var olli=document.getElementsByClassName("lst")
+console.log(olli)
+for(let i=0;i<olli.length;i++){
+    olli[i].onclick=function(){
+       
+        for(let i=0;i<olli.length;i++){
+            olli[i].style.backgroundColor="gray"
+        }
+
+        olli[i].style.backgroundColor="red"
+        index=i;
+        goindex()
+        
+    }
+}
+
+
+
+
 
 
 
@@ -21,7 +40,7 @@ var oqiandao=document.getElementById("qiandao");
     }
 
 var oright=document.getElementsByClassName("right");
-console.log(oright)
+
 oright[0].onclick=function(){
    
     gonext()
@@ -30,7 +49,7 @@ oright[0].onclick=function(){
 }
 
 var oleft=document.getElementsByClassName("left");
-console.log(oleft)
+
 oleft[0].onclick=function(){
    
     gopre();
@@ -65,8 +84,7 @@ function changeLiColor(){
    for(var i=0;i<oli.length;i++){
        oli[i].style.backgroundColor="gray"
    }
-    console.log(oli)
-    console.log(index)
+    
     oli[index].style.backgroundColor="red"
 
 }
